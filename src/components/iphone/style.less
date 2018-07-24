@@ -1,0 +1,143 @@
+@import '~style/helpers';
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/blue3.jpg'); 
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 34px;
+	margin: 0 auto;
+}
+
+.ToppestCard{
+	 
+	 position: fixed;
+  	top: 0;
+ 	 right: 4; 
+ 	 width: 345px;
+ 	 min-height: 20px;
+  	font-size: 16px;
+	font-weight:bold;
+	font-color:#000000;
+}
+
+.TopCard {
+  display: none;
+  width: 345px;
+  min-height: 250px;
+  font-size: 16px;
+  background-color: #ffa64d;
+    box-shadow:
+        0 0 10px 5px #ffa64d,  /* inner  */
+        0 0 10px 10px #bbe3f7, /* middle  */	
+        0 0 10px 1px #000000;  
+        border-radius: 2px;
+ }
+
+
+.BottomCard {
+  border: 10px;
+  margin-top: 35px;
+  display: none;
+  width: 345px;
+  min-height: 310px;
+  font-size: 16px;
+  background-image: url('../../assets/backgrounds/pitch.jpg'); 
+  background-color: #6ef25a;
+    box-shadow:
+        0 0 10px 5px #009900,  /* inner white */
+        0 0 10px 10px #00ace6, /* middle magenta */
+        0 0 10px 5px #0ff;  
+        border-radius: 2px;
+}
+
+.NavigationBar {
+  border: 10px;
+  margin-top: 15px;
+  display: none;
+  width: 345px;
+  min-height: 50px;
+  font-size: 16px;
+  background-color: #0073e6;
+    box-shadow:
+        0 0 10px 5px #0073e6,  /* inner white */
+        0 0 10px 10px #00ace6, /* middle magenta */
+        0 0 10px 5px #0ff;  
+        border-radius: 2px;
+	ul {
+	    list-style-type: none;
+   	 margin: 0;
+ 	   padding-left: 10px;
+ 	   padding-right: 10px;
+ 	  
+	}
+
+	li {
+    	display: inline;
+    	padding-left:10px;
+    	padding-right:10px;
+    	font-size:17px;
+	}
+}
+
+
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.details {
+	flex: 4;
+	font-size: 3em;
+}
+.city {
+	flex: 1;
+	font-size: 2em;
+	font-weight: 400;
+}
+.conditions {
+	flex: 1;
+	font-size: 2em;
+	font-style: italic;
+
+
+}
+.temperature {
+	flex: 1;
+	padding-left: 20px;
+	margin-top: -25px;
+	font-size: 8.5em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.recommendationsTitle {
+	font-weight : bold;
+	flex: 1;
+	margin-top: 0.5em;
+	margin-left: 3em;
+	font-size: 1.5em;
+	text-align: left;
+}
+.recommendations {
+	ul{
+ 		list-style:circle;	
+		margin-left: 0.05em;
+		font-style: italic;
+	}	
+	margin-top: 0.5em;
+	font-size: 1.3em;
+	text-align: left;
+}
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
